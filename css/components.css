@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Grids Demo Styling
+   ========================================================================== */
+
+.col-demo {
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+/* ==========================================================================
+   Splashscreen
+   ========================================================================== */
+
+.splash-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+    .splash-background img {
+        width: 80%;
+        padding-top: 30%;
+    }
+
+    .splash-background p {
+        font-weight: bold;
+        font-size: 1.25em;
+        margin-top: 2em;
+    }
+
+.splash-footer {
+    position: absolute;
+    bottom: 17px;
+}
+
+    .splash-footer img {
+        width: 10%;
+        padding: 0;
+        vertical-align: middle;
+        padding-left: 10px;
+    }
+
+/* ==========================================================================
+   Navigation Slider
+   ========================================================================== */
+
+.nav-cover {
+    width: 100%;
+    text-align: center;
+    background-color: #ddd;
+}
+
+    .nav-cover img {
+        width: 37%;
+        border-radius: 50%;
+        margin-top: 2em;
+        margin-bottom: 0em;
+    }
+
+    .nav-cover p {
+        padding: 2em 0;
+        font-weight: 900;
+    }
+
+/* ==========================================================================
+   Icons
+   ========================================================================== */
+
+.demo-icons{
+    padding: 1em 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+.demo-icons i{
+    width: 20%
+}
