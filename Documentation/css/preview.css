@@ -1,0 +1,29 @@
+.app_view{
+	width: 316px;
+	height: 610px;
+	display: block;
+	position: fixed;
+	top: 50px;
+	right: 10px;
+	background: url("../img/phone-case.png") no-repeat right top;
+	background-size: 100% 100%;
+	z-index: 10000000;
+}
+
+@media screen and (max-height: 600px) {
+	.app_view{
+		top: -50px;
+	}
+}
+
+	.app_view .view_block{
+		width: 285px;
+		height: 475px;
+		margin: 0 auto;
+		margin-top: 60px;
+		display: block;
+		overflow: hidden;
+		overflow-y: scroll;
+		background: #fff;
+        border: none;
+	}

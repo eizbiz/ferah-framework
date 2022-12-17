@@ -1,12 +1,349 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Hi! Ferah Framework</h1>
-  </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Ferah Framework Documentation</title>
+    <link rel='shortcut icon' href='favicon.png' type='image/x-icon' />
+
+    <!--  Emulator  -->
+    <link href="css/preview.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Prettify -->
+    <link href="css/prism.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body onscroll="checkscroll()" onload="checkscroll()">
+    <div class="header">
+        <button href="#menu-toggle" id="menu-toggle" class="navbar-toggle pull-left ferah-sm-nav-toggle">
+            <span class="icon-bar ferah-sm-nav"></span><span class="icon-bar ferah-sm-nav"></span><span class="icon-bar ferah-sm-nav"></span>
+        </button>
+        <img src="img/ferah_logo.png" onclick="window.location.href='index.html'" />
+    </div>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
+                <li id="gettingstarted">
+                    <a href="#">How To Get Started</a>
+                </li>
+                <ul class="subsidebar-nav" id="gettingstartedopen">
+                    <li>
+                        <a href="#overview">Overview</a>
+                    </li>
+                    <li>
+                        <a href="#installation">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#preview">Preview App</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                </ul>
+                <li>
+                    <a href="#htmlstruct">HTML Structure</a>
+                </li>
+                <li id="uicomponents">
+                    <a href="components.html">UI Components</a>
+                </li>                
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <article id="home">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="docs-home text-center">
+                                <img src="img/ferah_logo_half.png" />
+                                <p>Documentation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="custom-search-input">
+                                <div class="input-group col-md-12">
+                                    <input type="text" class="form-control input-lg" placeholder="Search..." />
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-info btn-lg" type="button">
+                                            <i class="glyphicon glyphicon-search"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a class="getting-started" href="#overviewt">
+                            <img src="img/icons/how_to_start.png" />
+                            <p>How To Get Started</p>
+                        </a>
+                        <a class="getting-started" href="#howtostart">
+                            <img src="img/icons/components.png" />
+                            <p>UI Components</p>
+                        </a>
+                        <a class="getting-started" href="#howtostart">
+                            <img src="img/icons/forum.png" />
+                            <p>Community Forum</p>
+                        </a>
+                    </div>
+                </article>
+                <article id="overview" class="article-header">
+                    <div class="row">
+                        <div class="col-md-12 overview">
+                            <h3>So, here you are!</h3>
+                            <p class="f-explain">
+                                Hey guys! Before starting with Ferah I would like to comment on most hyped question about "Native vs Html Hybrid Apps".
+                            </p>
+                            <p class="f-explain">
+                                You have heard and read many things about the above statement. But let me clear, every technology has its own palce in the environment and it totally depends on your need which technology you would like to choose for your future project.
+                            </p>
+                            <p class="f-explain">
+                                Ferah Framework is build for Cordova/PhoneGap based projects using the technologies HTML5, CSS3 and JavaScript. Using Ferah you can build application for all three platforms i.e.(Windows, Android, IOS). I have been designing applications from past two years and have tried to overcome all the issues that Cordova/PhoneGap developer generally faces.
+                            </p>
+                            <p class="f-explain">
+                                The best part of the Framework is, you are not bound to anything and you are fully independent to customize the code according to your needs. The code is written in a very simple and understandable format.
+                            </p>
+                            <p class="f-explain">
+                                While creating things, if you face any issue please share it on our forum so that others can get benefited and we will revert you back in the minimum time we can.
+                            </p>
+                            <p class="f-explain">
+                                So start creating the best things in the language you know the best!
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article id="installation" class="article-header">
+                    <div class="row">
+                        <h2>Installation</h2>
+                        <p class="f-explain">
+                            Ferah Framework doesn't require any installation. You just need to copy and replace the downloaded folder with the
+                            <strong>www</strong> folder of Cordova or PhoneGap project.
+                        </p>
+                        <p class="f-explain">
+                            Hereby we are providing the installation link of cordova and PhoneGap. Follow the link of the platform you are comfortable in.
+                        </p>
+                        <h3>
+                            Corodva Installation
+                        </h3>
+                        <p class="f-explain">Pic Source : <a href="https://cordova.apache.org/" target="_blank">https://cordova.apache.org/</a></p>
+                        <div class="cordova-inst">
+                            <img src="img/cordova-installation.jpg" />
+                        </div>
+                        <h3>
+                            PhoneGap Installation
+                        </h3>
+                        <p class="f-explain">
+                            You can follow the link for PhoneGap installation
+                            <a href="http://docs.phonegap.com/getting-started/1-install-phonegap/desktop/" target="_blank">
+                                http://docs.phonegap.com/getting-started/1-install-phonegap/desktop/
+                            </a>
+                        </p>
+                    </div>
+                </article>
+                <article id="preview" class="article-header">
+                    <div class="row">
+                        <h2>Preview Your App</h2>
+                        <p class="f-explain">
+                            Preview your apps on your devices or system browser without the need for SDK's or compiling code.
+                        </p>
+                        <h3>Preview in a Desktop Browser</h3>
+                        <p class="f-explain">
+                            You can use built-in emulator in Chrome Browser to preview your app. Below is a snapshot of the same.
+                        </p>
+                        <div class="chrome-emulator">
+                            <img src="img/chrome-emulator.png" />
+                        </div>
+                        <p class="f-explain">
+                            Learn more: <a href="https://developers.google.com/web/tools/chrome-devtools/iterate/device-mode/">
+                                Device Mode & Mobile Emulation | Chrome
+                            </a>
+                        </p>
+                        <h3>Preview on a Device using PhoneGap</h3>
+                        <p class="f-explain">
+                            You can preview your app on your device with the help of PhoneGap developer app.
+                        </p>
+                        <p class="f-explain">
+                            Reference Link: <a href="http://docs.phonegap.com/getting-started/4-preview-your-app/desktop/" target="_blank">
+                                http://docs.phonegap.com/getting-started/4-preview-your-app/desktop/
+                            </a>
+                        </p>
+                    </div>
+                </article>
+                <article id="about" class="article-header">
+                    <div class="row">
+                        <h2>About Ferah Framework</h2>
+                        <h3>What is Ferah Framework</h3>
+                        <p class="f-explain">
+                            Ferah Framework is a fully open source solution for developing high-quality hybrid apps using the web technologies you love i.e. HTML, CSS and Javascript.
+                        </p>
+                        <p class="f-explain">
+                            Ferah is designed to give you the best user experience for your hybrid apps. while developing Ferah we have been inspired by many open source frameworks and blogs supporting web technologies. Since it is build with pure HTML, CSS & JavaScript it fits in any space using web technologies i.e. Corodva/PhoneGap and any other framework using the same.
+                        </p>
+                        <p class="f-explain">
+                            Ferah doesn't follow any specific design pattern instead we believe hybrid apps have a unique place in mobile app development environment and we should not have such limitation while developing UI components. We don't use customized html tags neither we use Angular JS or jQuery to complicate or library. And the best part is you can create apps for <strong>Android, IOS and Windows Phone</strong> using Ferah.
+                        </p>
+                        <h3>How is Ferah Framework Licensed?</h3>
+                        <p class="f-explain">
+                            Ferah is completely free and open source, released under the permissive MIT license, which means you can use it in personal or commercial projects for free.
+                        </p>
+                        <h3>Who created Ferah?</h3>
+                        <!--<p class="f-explain">
+                            Hey guys! I am <a href="https://www.linkedin.com/in/sanjay-pandey-631a716b?trk=hp-identity-name">Sanjay Pandey</a>
+                            an enterpreneur and Creative Director at<a href="http://www.terasoltechnologies.com/" target="_blank">Terasol Technologies</a>
+                            and I created Ferah. This is our first beta launch and soon Ferah will be live for community for its growth.
+                        </p>-->
+                        <p class="f-explain">
+                            Our free SDK is in development phase and soon it will be released for all.
+                        </p>
+                        <!--<p class="f-explain">
+                            I would like to thank Mr Anoop Kumar Sharma (Co-Founder <a href="http://www.terasoltechnologies.com/" target="_blank">
+                                Terasol Technologies
+                            </a> ) for giving me a hand wherever my knowledge was lacking.
+                        </p>-->
+                    </div>
+                </article>
+                <article id="htmlstruct" class="article-header">
+                    <div class="row">
+                        <h2>HTML Structure</h2>
+                        <p class="f-explain">
+                            Ferah uses single column layout and it will remain common for all the pages. Use the below code to create a new page.
+                        </p>
+                        <pre class=" language-markup"><code class=" language-markup">
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+    &lt;meta name="format-detection" content="telephone=no">
+    &lt;meta name="msapplication-tap-highlight" content="no">
+    &lt;meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    &lt;link rel="stylesheet" type="text/css" href="css/style.css">
+    &lt;link rel="stylesheet" type="text/css" href="css/icon.css">
+    &lt;link rel="stylesheet" type="text/css" href="css/custom.css">
+    &lt;link rel="stylesheet" type="text/css" href="css/style.css">
+    &lt;!-- Script -->
+    &lt;script src="cordova.js">&lt;/script>
+    &lt;title>Title&lt;/title>
+&lt;/head>
+&lt;body>
+    &lt;script type="text/javascript">
+        // Styling for android devices
+        if (/Android/i.test(navigator.userAgent)) {
+            document.body.style.fontSize = "16px";
+        }
+    &lt;/script>
+    .
+    . 
+    .
+    .   
+    .
+    CONTENT
+    .
+    .
+    .
+    .
+    .
+    &lt;!-- scripts -->
+    &lt;script type="text/javascript" src="js/function.js">&lt;/script>
+&lt;/body>
+&lt;/html>
+	</code></pre>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- Prettify Script -->
+    <script src="js/prism.js"></script>
+    <!-- Offline Jquery -->
+    <script src="js/jquery.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+
+        // Getting Started
+        $(document).ready(function() {
+            $('#gettingstarted').click(function() {
+                $('#gettingstartedopen').toggle(300);
+            });
+            $('#uicomponents').click(function() {
+                $('#uicomponentsopen').toggle(300);
+            });
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".sidebar-nav a, .subsidebar-nav a ").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 600, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+        
+        // Emulator
+        var navelements = document.getElementById('sidebar-wrapper').getElementsByTagName('li');
+        for (var i = 0; i < navelements.length; i++) {
+            navelements[i].onclick = checkscroll;
+        }
+        function checkscroll() {
+            var elements = document.getElementsByTagName('article');
+            var elementid = 0;
+            for (var i = 0; i < elements.length; i++) {
+                if (elements[i].offsetTop < window.pageYOffset) {
+                    elementid = i;
+                }
+            }
+            if(elements[elementid].getElementsByTagName('input')[0]){
+            document.getElementById('emulator').innerHTML = elements[elementid].getElementsByTagName('input')[0].value;
+            }
+        }
+
+    </script>
+</body>
+
 </html>
